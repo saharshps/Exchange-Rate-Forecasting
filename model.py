@@ -23,7 +23,7 @@ print("  PART 1: Data Loading, Exploration & Preprocessing")
 print("=" * 60)
 
 # Load the CSV file
-df = pd.read_csv(r"C:\Users\sahar\OneDrive\Desktop\ds and ml files\exchange_rate.csv")
+df = pd.read_csv("exchange_rate.csv")
 
 # Parse the date column (format: DD-MM-YYYY HH:MM)
 df['date'] = pd.to_datetime(df['date'], format='%d-%m-%Y %H:%M')
